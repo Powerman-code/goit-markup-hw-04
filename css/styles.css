@@ -186,6 +186,27 @@ img {
   margin-right: 10px;
 }
 
+.email-and-phone--item::before {
+  display: inline-flex;
+  content: "";
+  /* outline: 2px solid red; */
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.icon-envelope::before {
+  background-image: url('../images/envelope.svg');
+}
+
+.icon-phone::before {
+  background-image: url('../images/phone.svg');
+}
+
 .email {
   margin-right: 31px;
   color: var(--title-text-color);
@@ -200,6 +221,17 @@ img {
 .email:focus {
   color: var(--accent-color);
 }
+
+/* .email::before {
+display: inline-block;
+content: "";
+outline: 2px solid red;
+background-size: 16px 12px;
+background-image: url('../images/envelope.svg');
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+} */
 
 .phone {
   color: var(--title-text-color);
