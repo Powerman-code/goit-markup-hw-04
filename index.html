@@ -34,22 +34,18 @@
 
             <ul class="email-and-phone">
 
-              <li class="email-and-phone--item icon-envelope">
-              <a href="" target="_blank" class="email" title="Ссылка на нашу почту">
-                  <!-- <img class="nav-image"
-                    src="./images/envelope.svg"
-                    alt="Конверт" /> -->
-                    Info@devstudio.com
-              </a>
+              <li class="email-and-phone--item">
+                <a href="" target="_blank" class="email" title="Ссылка на нашу почту">
+                  <svg class="icon-envelope">
+                    <use href="../images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>Info@devstudio.com</a>
               </li>
 
-              <li class="email-and-phone--item icon-phone">
+              <li class="email-and-phone--item">
                 <a href="tel:+380961111111" class="phone">
-                <!-- <img class="nav-image"
-                  src="./images/phone.svg"
-                    alt="мобильный телефон" /> -->
-                    +38 096 111 11 11
-              </a>
+                  <svg class="icon-phone">
+                    <use href="../images/symbol-defs.svg#icon-phone"></use>
+                  </svg>+38 096 111 11 11</a>
               </li>
             </ul>
           <!-- </div> -->
@@ -73,40 +69,40 @@
               <h2 class="section-title visually-hidden">Секция</h2>
               <!-- скрываем с помощью CSS -->
               <ul class="section-list">
-                <li class="section-item">
-                  <a href="">
-                    <img src="./images/antenna.svg" alt="Антенна" />
-                  </a>
+                <li class="section-item icon-antenna">
+                  <svg>
+                    <use href="../images/symbol-defs.svg#icon-antenna"></use>
+                  </svg>
                   <h3 class="undersection">Внимание к деталям</h3>
                   <p class="section-text">
                     Идейные соображения, а также начало повседневной работы по
                     формированию позиции.
                   </p>
                 </li>
-                <li class="section-item">
-                  <a href="">
+                <li class="section-item icon-clock">
+                  <!-- <a href="">
                     <img src="./images/clock.png" alt="Часы" />
-                  </a>
+                  </a> -->
                   <h3 class="undersection">Пунктуальность</h3>
                   <p class="section-text">
                     Задача организации, в особенности же рамки и место обучения кадров
                     влечет за собой.
                   </p>
                 </li>
-                <li class="section-item">
-                  <a href="">
+                <li class="section-item icon-pc">
+                  <!-- <a href="">
                     <img src="./images/pc.png" alt="ПК" />
-                  </a>
+                  </a> -->
                   <h3 class="undersection">Планирование</h3>
                   <p class="section-text">
                     Равным образом консультация с широким активом в значительной
                     степени обуславливает.
                   </p>
                 </li>
-                <li class="section-item">
-                  <a href="">
+                <li class="section-item icon-astronaut">
+                  <!-- <a href="">
                     <img src="./images/astronaut.png" alt="Космонавт" />
-                  </a>
+                  </a> -->
                   <h3 class="undersection">Современные технологии</h3>
                   <p class="section-text">
                     Значимость этих проблем настолько очевидна, что реализация
@@ -161,28 +157,30 @@
                 <h3 class="team-member">John Smith</h3>
                 <p class="team-text">Product Designer</p>
                   <ul class="social-networks team-networks">
+                    <!-- в 1 карточке соц сети сделаные через бефоре (псевдоэлемент) -->
+
                     <li class="sn-element">
-                      <a href="">
-                        <img src="./images/instagram.png" width="20" alt="Instagram"
-                      /></a>
+                      <a href="" class="icon-instagram">
+                        <!-- <img src="./images/instagram.png" width="20" alt="Instagram" /> -->
+                      </a>
                     </li>
 
                     <li class="sn-element">
-                      <a href=""
-                        ><img src="./images/twitter.png" width="20" alt="Twitter"
-                      /></a>
+                      <a href="" class="icon-twitter">
+                        <!-- <img src="./images/twitter.png" width="20" alt="Twitter" /> -->
+                    </a>
                     </li>
 
                     <li class="sn-element">
-                      <a href="">
-                        <img src="./images/facebook.png" width="10" alt="Facebook"
-                      /></a>
+                      <a href="" class="icon-facebook">
+                        <!-- <img src="./images/facebook.png" width="10" alt="Facebook" /> -->
+                      </a>
                     </li>
 
                     <li class="sn-element">
-                      <a href="">
-                        <img src="./images/linkedin.png" width="20" alt="linkedin"
-                      /></a>
+                      <a href="" class="icon-linkedin">
+                        <!-- <img src="./images/linkedin.png" width="20" alt="linkedin" /> -->
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -193,20 +191,20 @@
                 <img src="./images/marta_stewart.jpg" alt="Marta Stewart" width="270" />
                 <h3 class="team-member">Marta Stewart</h3>
                 <p class="team-text">Frontend Developer</p>
-                <div class="social-networks team-networks">
-                  <a href=""
-                    ><img src="./images/instagram.png" width="20" alt="Instagram"
-                  /></a>
-                  <a href=""
-                    ><img src="./images/twitter.png" width="20" alt="Twitter"
-                  /></a>
-                  <a href=""
-                    ><img src="./images/facebook.png" width="10" alt="Facebook"
-                  /></a>
-                  <a href=""
-                    ><img src="./images/linkedin.png" width="20" alt="linkedin"
-                  /></a>
-                </div>
+                <ul class="marta-networks">
+                  <li class="marta-snitem">
+                    <!-- <img src="./images/instagram.png" width="20" alt="Instagram" /> -->
+                  </li>
+                  <li class="marta-snitem">
+                    <!-- <img src="./images/twitter.png" width="20" alt="Twitter" /> -->
+                  </li>
+                  <li class="marta-snitem">
+                    <!-- <img src="./images/facebook.png" width="10" alt="Facebook" /> -->
+                  </li>
+                  <li class="marta-snitem">
+                    <!-- <img src="./images/linkedin.png" width="20" alt="linkedin" /> -->
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -261,46 +259,50 @@
         <div class="container">
           <h2 class="clients">Постоянные клиенты</h2>
           <ul class="clients-list">
-            <li>
-              <a href="">
-                <img src="./images/ya&co.png" width="175" alt="Ya&Co logo"
-              /></a>
+            <li class="clients-card">
+              <a href="" class="icon-ya_co">
+                <!-- <img src="./images/ya&co.png" width="175" alt="Ya&Co logo" /> -->
+              </a>
             </li>
-            <li>
-              <a href="">
-                <img
+            <li class="clients-card">
+              <a href="" class="icon-companytaglinehere">
+                <!-- <img
                   src="./images/companytaglinehere.png"
                   width="175"
                   alt="CompanyTagline logo"
-              /></a>
+                /> -->
+            </a>
             </li>
-            <li>
-              <a href="">
-                <img src="./images/company.png" width="175" alt="Company logo"
-              /></a>
+            <li class="clients-card icon-company">
+              <a href="" class="icon-company">
+                <!-- <img src="./images/company.png" width="175" alt="Company logo"
+                /> -->
+              </a>
             </li>
-            <li>
-              <a href="">
-                <img
+            <li class="clients-card">
+              <a href="" class="icon-foster_peters">
+                <!-- <img
                   src="./images/foster_peters.png"
                   width="175"
                   alt="foster peters logo"
-              /></a>
+                /> -->
+            </a>
             </li>
-            <li>
-              <a href="">
-                <img src="./images/brand.png" width="175" alt="brand logo" />
+            <li class="clients-card">
+              <a href="" class="icon-brand">
+                <!-- <img src="./images/brand.png" width="175" alt="brand logo" /> -->
               </a>
             </li>
-            <li>
-              <a href="">
-                <img
+            <li class="clients-card">
+              <a href="" class="icon-company_tag_line2">
+                <!-- <img
                   src="./images/company_tag_line2.png"
                   width="175"
                   alt="company_tag_line 2 logo"
-                />
+                /> -->
               </a>
             </li>
+
           </ul>
         </div>
       </section>

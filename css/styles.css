@@ -67,14 +67,13 @@ img {
   height: auto;
   }
 
-  .visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    …
-  }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 /* Header */
 
@@ -179,37 +178,21 @@ img {
 
   margin-left: auto;
   align-items: center;
-}
-
-.nav-image {
-  display: inline-flex;
-  margin-right: 10px;
-}
-
-.email-and-phone--item::before {
-  display: inline-flex;
-  content: "";
   /* outline: 2px solid red; */
-  width: 16px;
-  height: 12px;
+}
+
+/* .nav-image {
+  display: inline-flex;
   margin-right: 10px;
+} */
 
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.icon-envelope::before {
-  background-image: url('../images/envelope.svg');
-}
-
-.icon-phone::before {
-  background-image: url('../images/phone.svg');
+.email-and-phone--item {
+  display: inline-flex;
 }
 
 .email {
   margin-right: 31px;
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -233,8 +216,32 @@ background-size: contain;
 background-position: center;
 } */
 
+.icon-envelope {
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-envelope:hover,
+.icon-envelope:focus {
+  fill: currentColor;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-phone:hover,
+.icon-phone:focus {
+  fill: currentColor;
+}
+
 .phone {
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -321,6 +328,37 @@ background-position: center;
 
 .section-item {
   width: 270px;
+}
+
+/* .section-item::before {
+  content: "";
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-background-and-button-color);
+} */
+
+/* .icon-antenna::before {
+  background-image: url('../images/antenna.svg');
+} */
+
+.icon-antenna {
+  width: 270px;
+  height: 120px;
+}
+
+.icon-clock::before {
+    background-image: url('../images/clock.svg');
+}
+
+.icon-pc::before {
+  background-image: url('../images/pc.svg');
+}
+
+.icon-astronaut::before {
+  background-image: url('../images/astronaut.svg');
 }
 
 .section-text {
@@ -471,6 +509,90 @@ background-position: center;
     margin-right: 0;
   }
 
+  .sn-element::before {
+    content: "";
+
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .icon-instagram::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/instagram.svg');
+    }
+
+  .icon-twitter::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/twitter.svg');
+    }
+
+  .icon-facebook::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/facebook.svg');
+    }
+
+  .icon-linkedin::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/linkedin.svg');
+    }
+
+  .marta-networks {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .marta-networks::before {
+
+    content: "";
+    outline: 1px solid red;
+    /* padding-bottom: 24px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--header-and-text-color);
+    /* background-image: url('../images/twitter.svg'); */
+  }
+
+  .marta-snitem::before {
+    content: "";
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    outline: 1px solid red;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .marta-snitem:nth-child(1)::before {
+    background-image: url('../images/instagram.svg');
+  }
+
+  .marta-snitem:nth-child(2)::before {
+    background-image: url('../images/twitter.svg');
+  }
+
+  .marta-snitem:nth-child(3)::before {
+    background-image: url('../images/facebook.svg');
+  }
+
+  .marta-snitem:nth-child(4)::before {
+    background-image: url('../images/linkedin.svg');
+  }
 
 .sfooter {
   margin-top: 0px;
@@ -487,6 +609,81 @@ background-position: center;
   display: flex;
   justify-content: space-between;
 }
+
+.clients-card {
+  background-color: var(--header-and-text-color);
+  box-sizing: border-box;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+
+
+.clients-card::before {
+  background-position: center;
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  }
+
+  .icon-ya_co::before {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 44px;
+  width: 49px;
+  content: "";
+  background-image: url('../images/ya&co.svg');
+  }
+
+.icon-companytaglinehere::before {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 52px;
+  content: "";
+  background-image: url('../images/company_tag_line2.svg');
+}
+
+.icon-company::before {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 41px;
+  width: 42px;
+  content: "";
+  background-image: url('../images/company.svg');
+}
+
+.icon-foster_peters::before {
+  display: block;
+}
+
+.icon-brand::before {
+  display: block;
+}
+
+.icon-company_tag_line2::before {
+  display: block;
+}
+
 /* Footer */
 
 .footer {
