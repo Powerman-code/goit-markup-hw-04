@@ -326,8 +326,20 @@ background-position: center;
  align-items: baseline;
 }
 
-.section-item {
+/* .section-item {
+  display: inline-block;
   width: 270px;
+  height: 120px;
+  background-color: var(--secondary-background-and-button-color);
+  border-radius: 4px;
+} */
+
+.section-block {
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-background-and-button-color);
+  border-radius: 4px;
 }
 
 /* .section-item::before {
@@ -345,8 +357,9 @@ background-position: center;
 } */
 
 .icon-antenna {
-  width: 270px;
-  height: 120px;
+  padding: 25px 102.34px;
+  width: 65.32px;
+  height: 70px;
 }
 
 .icon-clock::before {
@@ -764,9 +777,9 @@ background-position: center;
   text-transform: uppercase;
 }
 
-.container-subscribe {
+/* .container-subscribe {
   display: block;
-}
+} */
 
 .subscribe {
   display: inline-flex;
