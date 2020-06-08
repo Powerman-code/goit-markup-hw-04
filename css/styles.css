@@ -191,11 +191,10 @@ img {
 
 .email-and-phone--item {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .email {
+  display: inline-flex;
   margin-right: 31px;
   color: var(--primary-text-color);
 
@@ -203,6 +202,9 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .email:hover,
@@ -246,12 +248,15 @@ background-position: center;
 }
 
 .phone {
+  display: inline-flex;
   color: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
+  justify-content: center;
 }
 
 .phone:hover,
