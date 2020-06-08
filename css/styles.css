@@ -191,6 +191,8 @@ img {
 
 .email-and-phone--item {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .email {
@@ -886,8 +888,6 @@ background-position: center;
 
 .icon-send {
   padding-left: 10px;
-  /* padding-bottom: 13px;
-  padding-top: 13px; */
   width: 24px;
   height: 24px;
 }
@@ -956,10 +956,10 @@ background-position: center;
 
   border-radius: 4px;
   padding: 10px 29px;
-  display: inline-block;
+  display: flex;
   min-width: 136px;
-  align-items: baseline;
-  justify-content: baseline;
+  align-items: center;
+  justify-content: center;
   /* height: 50px; */
 
 
@@ -1078,6 +1078,11 @@ background-position: center;
   overflow: hidden;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .card-content {
