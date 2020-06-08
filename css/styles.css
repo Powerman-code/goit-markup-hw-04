@@ -956,7 +956,7 @@ background-position: center;
 
   border-radius: 4px;
   padding: 10px 29px;
-  display: flex;
+  display: inline-flex;
   min-width: 136px;
   align-items: center;
   justify-content: center;
