@@ -86,7 +86,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 1170px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .page-header {
@@ -102,7 +102,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 1170px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 
@@ -420,6 +420,7 @@ background-position: center;
 }
 
 .work__card__image {
+  position: relative;
   width: 370px;
   overflow: hidden;
   border-top-left-radius: 5px;
@@ -427,6 +428,9 @@ background-position: center;
 }
 
 .work-description{
+  position: absolute;
+  bottom: 0;
+  right: 0;
   display: flex;
   min-width: 370px;
   overflow: hidden;
@@ -819,7 +823,7 @@ background-position: center;
   padding-left: 15px;
   padding-right: 15px;
   width: 1170px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .logo-bottom {
@@ -1035,7 +1039,7 @@ background-position: center;
   margin-top: 94px;
   margin-bottom: 50px;
   width: 1170px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .filter-button-block {
@@ -1067,7 +1071,7 @@ background-position: center;
   margin-top: 0 px;
   margin-bottom: 94px;
   width: 1170px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 
   color: var(--title-text-color)
 }

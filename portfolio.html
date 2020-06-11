@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body class="page">
+
     <header class="page-header">
       <div class="page-container">
           <nav class="navigation">
@@ -23,8 +24,8 @@
             <a href="./index.html" class="logo"><span class="accent">Web</span> Studio</a>
 
             <ul class="site-nav list">
-              <li class="site-nav-li"><a href="./index.html" class="link">Студия</a></li>
-              <li class="site-nav-li"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+              <li class="site-nav-li"><a href="./index.html" class="link current">Студия</a></li>
+              <li class="site-nav-li"><a href="./portfolio.html" class="link">Портфолио</a></li>
               <li class="site-nav-li"><a href="" class="link">Контакты</a></li>
             </ul>
 
@@ -33,20 +34,19 @@
           <!-- <div class="page-contacts"> -->
 
             <ul class="email-and-phone">
-              <li>
-              <a href="" target="_blank" class="email" title="Ссылка на нашу почту">
-                  <img class="nav-image"
-                    src="./images/envelope_(hover).svg"
-                    alt="Конверт" />Info@devstudio.com
-              </a>
+
+              <li class="email-and-phone--item">
+                <a href="" target="_blank" class="email" title="Ссылка на нашу почту">
+                  <svg class="icon-envelope">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>Info@devstudio.com</a>
               </li>
 
-              <li>
+              <li class="email-and-phone--item">
                 <a href="tel:+380961111111" class="phone">
-                <img class="nav-image"
-                  src="./images/vector.svg"
-                    alt="мобильный телефон" />+38 096 111 11 11
-              </a>
+                  <svg class="icon-phone">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>+38 096 111 11 11</a>
               </li>
             </ul>
           <!-- </div> -->
@@ -209,7 +209,7 @@
               <div class="footer-adress">
                 <address class="footer-adress1">г. Киев, пр-т Леси Украинки, 26
                   <a href="info@example.com" class="footer-adress2">info@example.com</a>
-                  <a href="tel:+380991111111" class="footer-adress2">+380991111111</a>
+                  <a href="tel:+380991111111" class="footer-adress2">+38 099 111 11 11</a>
                 </address>
                 <!-- <address class="footer-adress2">info@example.com  +38 099 111 11 11</address> -->
               </div>
@@ -217,27 +217,56 @@
 
           <div class="join-container">
             <b class="join">присоединяйтесь</b>
-            <div class="social-networks">
-              <a href="" class="sn-element"><img src="./images/instagram.png" width="44" alt="instagram"
-              /></a>
-              <a href="" class="sn-element"><img src="./images/twitter.png" width="44" alt="Twitter"
-              /></a>
-              <a href="" class="sn-element"><img src="./images/facebook.png" width="22" alt="Facebook"
-              /></a>
-              <a href="" class="sn-element"><img src="./images/linkedin.png" width="44" alt="linkedin"
-              /></a>
-            </div>
+            <!-- <div class="social-networks"> -->
+              <ul class="social-networks">
+
+                <li class="sn-element footer-element">
+                  <a href="" class="link-socialnetworks footer--link--socialnetworks">
+                    <svg class="icon-instagram">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="sn-element">
+                  <a href="" class="link-socialnetworks footer--link--socialnetworks">
+                    <svg class="icon-twitter">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="sn-element">
+                  <a href="" class="link-socialnetworks footer--link--socialnetworks">
+                    <svg class="icon-facebook">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="sn-element">
+                  <a href="" class="link-socialnetworks footer--link--socialnetworks">
+                    <svg class="icon-linkedin">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+            <!-- </div> -->
           </div>
 
 
 
-          <div container-subscribe>
+          <div class="container-subscribe">
             <b class="subscribe">подпишитесь на рассылку</b>
 
             <div class="auth-nav">
 
             <input class="input" type="text" name="E-mail" />
-            <a href="" class="button primary" width="200px" hight="50px">Подписаться</a>
+            <a href="" class="button primary" width="200px" height="50px">Подписаться
+              <svg class="icon-send">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </a>
             </div>
           </div>
 
