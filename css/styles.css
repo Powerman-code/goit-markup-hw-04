@@ -1117,7 +1117,7 @@ background-position: center;
 
 .portfolio-element:nth-child(3n) {
   margin-right: 0;
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
 }
 
 .portfolio-element:nth-last-child(-n + 3) {
